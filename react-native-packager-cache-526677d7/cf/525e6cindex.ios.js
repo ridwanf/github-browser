@@ -13,7 +13,8 @@ var _reactNative=require('react-native');
 
 
 var _Login=require('./Login');var _Login2=_interopRequireDefault(_Login);
-var _AuthService=require('./AuthService');var _AuthService2=_interopRequireDefault(_AuthService);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var _components={GithubBrowser:{displayName:'GithubBrowser'}};var _node_modulesReactTransformHmrLibIndexJs2=(0,_index2.default)({filename:'/Users/ridwan/source/GithubBrowser/GithubBrowser/index.ios.js',components:_components,locals:[module],imports:[_react3.default]});function _wrapComponent(id){return function(Component){return _node_modulesReactTransformHmrLibIndexJs2(Component,id);};}var GithubBrowser=_wrapComponent('GithubBrowser')(function(_Component){_inherits(GithubBrowser,_Component);
+var _AuthService=require('./AuthService');var _AuthService2=_interopRequireDefault(_AuthService);
+var _AppContainer=require('./AppContainer');var _AppContainer2=_interopRequireDefault(_AppContainer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var _components={GithubBrowser:{displayName:'GithubBrowser'}};var _node_modulesReactTransformHmrLibIndexJs2=(0,_index2.default)({filename:'/Users/ridwan/source/GithubBrowser/GithubBrowser/index.ios.js',components:_components,locals:[module],imports:[_react3.default]});function _wrapComponent(id){return function(Component){return _node_modulesReactTransformHmrLibIndexJs2(Component,id);};}var GithubBrowser=_wrapComponent('GithubBrowser')(function(_Component){_inherits(GithubBrowser,_Component);
 
 
 function GithubBrowser(props){_classCallCheck(this,GithubBrowser);var _this=_possibleConstructorReturn(this,(GithubBrowser.__proto__||Object.getPrototypeOf(GithubBrowser)).call(this,
@@ -51,11 +52,7 @@ style:styles.loader})));
 }
 if(this.state.isLoggedIn){
 return(
-_react3.default.createElement(_reactNative.View,{style:styles.container},
-_react3.default.createElement(_reactNative.Text,{style:styles.welcome},'Logged In')));
-
-
-
+_react3.default.createElement(_AppContainer2.default,null));
 
 }else{
 return(
