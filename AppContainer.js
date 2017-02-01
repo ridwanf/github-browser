@@ -1,6 +1,7 @@
 'use strict';
 
 import React ,{Component} from 'react';
+import Feed from './Feed'
 import {
   StyleSheet,
   Text,
@@ -26,9 +27,7 @@ export default class AppContainer extends Component {
           icon={require('./images/inbox.png')}
           onPress={()=>this.setState({selectedTab:'feed'})}
         >
-          <Text style={styles.welcome}>
-            Tab 1
-          </Text>
+            <Feed/>
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title="Search"
@@ -36,9 +35,7 @@ export default class AppContainer extends Component {
           icon={require('./images/search.png')}
           onPress={()=>this.setState({selectedTab:'search'})}
         >
-          <Text style={styles.welcome}>
-            Tab 2
-          </Text>
+            <Feed/>
         </TabBarIOS.Item>
       </TabBarIOS>
     );
